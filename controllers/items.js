@@ -14,7 +14,15 @@ function index(req, res) {
   })
 }
 
+function deleteItem(req,res) {
+  Item.findByIdAndDelete(req.params.id)
+  .then(item => {
+    res.json(item)
+  })
+}
+
 export {
   create,
-  index
+  index,
+  deleteItem as delete
 }
