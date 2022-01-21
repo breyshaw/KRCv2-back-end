@@ -7,6 +7,14 @@ function create(req, res) {
     })
 }
 
+function index(req, res) {
+  Item.find({})
+  .then(items => {
+    res.json(items)
+  })
+}
+
 export {
-  create
+  create,
+  index
 }
