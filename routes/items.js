@@ -13,4 +13,5 @@ router.post('/', checkAuth, itemsCtrl.create)
 router.get('/', checkAuth, itemsCtrl.index)
 router.delete('/:id', checkAuth, itemsCtrl.delete)
 router.patch('/:id', checkAuth, itemsCtrl.update)
+router.post('/:id/reviews', checkAuth, itemsCtrl.addReview)
 export { router }

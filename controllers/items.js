@@ -28,9 +28,23 @@ function deleteItem(req,res) {
   })
 }
 
+function addReview(req, res) {
+  req.body.author = req.user.profile
+  Item.findById(req.params.id)
+  .then(item => {
+    item.reviews.push(req.body)
+    item.save()
+      .then(itemToReturn => {
+        res.json(itemToReturn)
+      })
+
+  })
+}
+
 export {
   create,
   index,
   update,
-  deleteItem as delete
+  deleteItem as delete,
+  addReview
 }
