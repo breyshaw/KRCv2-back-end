@@ -14,6 +14,13 @@ function index(req, res) {
   })
 }
 
+function update(req, res) {
+  Item.findByIdAndUpdate(req.params.id, req.body, {new: true})
+    .then(item => {
+      res.json(item)
+    })
+}
+
 function deleteItem(req,res) {
   Item.findByIdAndDelete(req.params.id)
   .then(item => {
@@ -24,5 +31,6 @@ function deleteItem(req,res) {
 export {
   create,
   index,
+  update,
   deleteItem as delete
 }
