@@ -9,6 +9,12 @@ function create(req, res) {
 
 function index(req, res) {
   Item.find({})
+  .populate({
+    path: 'reviews',
+    populate: {
+      path: 'author'
+    }
+  })
   .then(items => {
     res.json(items)
   })
@@ -34,10 +40,23 @@ function addReview(req, res) {
   .then(item => {
     item.reviews.push(req.body)
     item.save()
+    .then(savedItem => {
+      savedItem
+      .populate([
+        {
+          path: 'author'
+        },
+        {
+          path: 'reviews',
+          populate: {
+            path: 'author'
+          }
+        }
+      ])
       .then(itemToReturn => {
         res.json(itemToReturn)
       })
-
+    })
   })
 }
 
