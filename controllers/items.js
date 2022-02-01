@@ -60,10 +60,18 @@ function addReview(req, res) {
   })
 }
 
+function clothes(req, res) {
+  Item.find({ type: 'clothing' })
+  .then(clothes => {
+    res.json(clothes)
+  })
+}
+
 export {
   create,
   index,
   update,
   deleteItem as delete,
-  addReview
+  addReview,
+  clothes
 }
