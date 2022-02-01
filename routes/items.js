@@ -7,7 +7,6 @@ const router = Router()
 /*---------- Public Routes ----------*/
 
 router.get('/', itemsCtrl.index)
-router.get('/clothes', itemsCtrl.clothes)
 
 /*---------- Protected Routes ----------*/
 router.use(decodeUserFromToken)
