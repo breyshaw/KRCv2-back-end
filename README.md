@@ -27,7 +27,7 @@ Katie Rayne Creations was developed as a full CRUD, MERN Stack mobile-responsive
 
 ## Technology Implemented:
 
-### HTML & EJS
+### HTML
 <p></p>
 
 ### CSS
