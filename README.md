@@ -54,6 +54,10 @@ Katie Rayne Creations was developed as a full CRUD, MERN Stack mobile-responsive
 <p></p>
 
 ## Stretch Goals:
+-Add subcategories to item category components
+<p></p>
+-Add image uploading functionality
+<p></p>
 -Add a form of OAuth
 <p></p>
 -Create Shopping cart functionality
