@@ -15,6 +15,7 @@ const itemSchema = new Schema({
     author: {type: mongoose.Schema.Types.ObjectId, ref: "Profile"},
     title: String,
     imageUrl: String,
+    videoUrl: String,
     type: String,
     price: String,
     info: String,
