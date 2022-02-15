@@ -20,6 +20,8 @@ const itemSchema = new Schema({
     price: String,
     info: String,
     reviews: [reviewSchema]
+}, {
+    timestamps: true
 })
 
 const Item = mongoose.model('Item', itemSchema)
