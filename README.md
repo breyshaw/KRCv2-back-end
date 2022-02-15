@@ -11,15 +11,15 @@ I wanted to create an application that I will continue to work on developing as 
 
 Here is the homepage, post styling and functionality:
 <p></p>
-<img src="https://i.imgur.com/LYYQPX4.png" height="300">  
+<img src="https://i.imgur.com/KtSVi3o.png" height="300">  
 
 Scroll through multiple categories to find items:
 <p></p>
-<img src="https://i.imgur.com/BlVvxeX.png" height="300">  
+<img src="https://i.imgur.com/zWvUrF6.png" height="300">  
 
 Here is the show item view, post styling and functionality:
 <p></p>
-<img src="https://i.imgur.com/UiEeeAE.png" height="300"> 
+<img src="https://i.imgur.com/GTexIqQ.png" height="300"> 
 
 Katie Rayne Creations was developed as a full CRUD, MERN Stack mobile-responsive application. At an admin level, a user can perform full CRUD on this site. A regular user or logged out user can only read. The site is centered around the navigation bar. Each category/button on the navigation bar have their own react components bringing easy, quick, and efficient navigation to the site. 
 
