@@ -17,6 +17,7 @@ const itemSchema = new Schema({
     imageUrl: String,
     videoUrl: String,
     type: String,
+    subcat: String,
     price: String,
     info: String,
     reviews: [reviewSchema]
