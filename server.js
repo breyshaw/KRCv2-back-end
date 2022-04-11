@@ -1,3 +1,4 @@
+import 'dd-trace/init';
 import 'dotenv/config.js'
 import express from 'express'
 import logger from 'morgan'
