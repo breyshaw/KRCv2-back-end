@@ -1,5 +1,5 @@
 import 'dotenv/config.js'
-import 'dd-trace/init'
+import tracer from 'dd-trace'
 import express from 'express'
 import logger from 'morgan'
 import cors from 'cors'
@@ -11,7 +11,7 @@ import { router as itemsRouter } from './routes/items.js'
 import('./config/database.js')
 
 const app = express()
-
+tracer.init()
 app.use(cors())
 app.use(logger('dev'))
 app.use(express.json())
