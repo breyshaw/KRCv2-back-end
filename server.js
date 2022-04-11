@@ -1,5 +1,5 @@
-import 'dd-trace/init';
 import 'dotenv/config.js'
+import 'dd-trace/init'
 import express from 'express'
 import logger from 'morgan'
 import cors from 'cors'
